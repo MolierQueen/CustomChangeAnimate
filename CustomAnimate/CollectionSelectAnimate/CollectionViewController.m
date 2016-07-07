@@ -16,6 +16,23 @@
 #define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
 
 
+
+/*
+ A => 18    B => 20   C => 25
+ 竞日孤鸣：    B5    		20
+ 老豆芽：	     A2      	18
+ 鱼头：       B2         20
+ JCMan：	     A6         18
+ 何b：	     B3         20
+ 侯建堃：	     B6         20
+ 高阳：       B2         20
+ 陈伯佳：      A4        	18
+ 宁浩：	     A7         18
+ */
+
+
+
+
 static NSString * cellId = @"UICollectionViewCell";
 
 @interface CollectionViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
