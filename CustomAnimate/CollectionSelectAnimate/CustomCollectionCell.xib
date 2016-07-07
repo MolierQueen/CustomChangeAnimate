@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CustomCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="183"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="183"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="CcR-mh-WqT">
+                        <rect key="frame" x="0.0" y="0.0" width="220" height="183"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="CcR-mh-WqT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DL4-Wh-zuv"/>
+                <constraint firstItem="CcR-mh-WqT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ohz-QV-ICA"/>
+                <constraint firstAttribute="trailing" secondItem="CcR-mh-WqT" secondAttribute="trailing" id="iWl-vZ-Zs7"/>
+                <constraint firstAttribute="bottom" secondItem="CcR-mh-WqT" secondAttribute="bottom" id="pOv-rN-mBQ"/>
+            </constraints>
+            <size key="customSize" width="220" height="183"/>
+            <point key="canvasLocation" x="266" y="399.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="test" width="572" height="593"/>
+    </resources>
+</document>

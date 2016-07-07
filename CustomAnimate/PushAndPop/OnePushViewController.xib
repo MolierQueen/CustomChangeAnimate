@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnePushViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS1-4a-wqj">
+                    <rect key="frame" x="250" y="250" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="I4Z-gi-RbN"/>
+                        <constraint firstAttribute="width" constant="100" id="spk-QJ-0dZ"/>
+                    </constraints>
+                    <state key="normal" title="跳转"/>
+                    <connections>
+                        <action selector="pushAction:" destination="-1" eventType="touchUpInside" id="Eoo-rh-EcX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oS1-4a-wqj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="6Lo-y4-KTl"/>
+                <constraint firstItem="oS1-4a-wqj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9AG-rb-fnD"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
