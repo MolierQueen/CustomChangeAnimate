@@ -13,7 +13,11 @@ typedef NS_ENUM(NSUInteger, CustomAnimateType) {
     
     CustomAnimateTypePresent = 1,
     
-    CustomAnimateTypeDismiss
+    CustomAnimateTypeDismiss,
+    
+    CustomAnimateTypePush,
+    
+    CustomAnimateTypePop,
     
 };
 

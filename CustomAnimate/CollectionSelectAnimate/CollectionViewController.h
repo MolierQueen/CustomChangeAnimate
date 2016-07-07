@@ -10,4 +10,8 @@
 
 @interface CollectionViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UICollectionView *mainCollection;
+
+@property (nonatomic, strong) NSIndexPath * currentIndexPath;
+
 @end

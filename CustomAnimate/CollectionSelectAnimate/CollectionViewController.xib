@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollectionViewController">
             <connections>
                 <outlet property="collectionLayout" destination="AYB-uQ-YTD" id="GfX-zZ-IIc"/>
-                <outlet property="mainCollection" destination="9AC-wI-7DO" id="J5x-L5-4Nt"/>
+                <outlet property="mainCollection" destination="9AC-wI-7DO" id="pN2-gG-u7V"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

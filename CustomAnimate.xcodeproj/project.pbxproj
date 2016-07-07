@@ -26,7 +26,6 @@
 		643601E51D2E3B9700E7C251 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 643601E31D2E3B9700E7C251 /* CollectionViewController.m */; };
 		643601E61D2E3B9700E7C251 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 643601E41D2E3B9700E7C251 /* CollectionViewController.xib */; };
 		643601EA1D2E3BB200E7C251 /* CollectionInfoConttroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 643601E81D2E3BB200E7C251 /* CollectionInfoConttroller.m */; };
-		643601EB1D2E3BB200E7C251 /* CollectionInfoConttroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 643601E91D2E3BB200E7C251 /* CollectionInfoConttroller.xib */; };
 		643601EF1D2E4AE300E7C251 /* CustomCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 643601ED1D2E4AE300E7C251 /* CustomCollectionCell.m */; };
 		643601F01D2E4AE300E7C251 /* CustomCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 643601EE1D2E4AE300E7C251 /* CustomCollectionCell.xib */; };
 /* End PBXBuildFile section */
@@ -74,7 +73,6 @@
 		643601E41D2E3B9700E7C251 /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		643601E71D2E3BB200E7C251 /* CollectionInfoConttroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionInfoConttroller.h; sourceTree = "<group>"; };
 		643601E81D2E3BB200E7C251 /* CollectionInfoConttroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionInfoConttroller.m; sourceTree = "<group>"; };
-		643601E91D2E3BB200E7C251 /* CollectionInfoConttroller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionInfoConttroller.xib; sourceTree = "<group>"; };
 		643601EC1D2E4AE300E7C251 /* CustomCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionCell.h; sourceTree = "<group>"; };
 		643601ED1D2E4AE300E7C251 /* CustomCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionCell.m; sourceTree = "<group>"; };
 		643601EE1D2E4AE300E7C251 /* CustomCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionCell.xib; sourceTree = "<group>"; };
@@ -197,7 +195,6 @@
 				643601E41D2E3B9700E7C251 /* CollectionViewController.xib */,
 				643601E71D2E3BB200E7C251 /* CollectionInfoConttroller.h */,
 				643601E81D2E3BB200E7C251 /* CollectionInfoConttroller.m */,
-				643601E91D2E3BB200E7C251 /* CollectionInfoConttroller.xib */,
 				643601EC1D2E4AE300E7C251 /* CustomCollectionCell.h */,
 				643601ED1D2E4AE300E7C251 /* CustomCollectionCell.m */,
 				643601EE1D2E4AE300E7C251 /* CustomCollectionCell.xib */,
@@ -295,7 +292,6 @@
 				643601CC1D2CF56300E7C251 /* OnePresentViewController.xib in Resources */,
 				643601C71D2CF4B700E7C251 /* OnePushViewController.xib in Resources */,
 				643601F01D2E4AE300E7C251 /* CustomCollectionCell.xib in Resources */,
-				643601EB1D2E3BB200E7C251 /* CollectionInfoConttroller.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +516,7 @@
 				643601B81D2CF39E00E7C251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		643601B91D2CF39E00E7C251 /* Build configuration list for PBXNativeTarget "CustomAnimateTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +525,7 @@
 				643601BB1D2CF39E00E7C251 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

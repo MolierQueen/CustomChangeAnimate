@@ -26,6 +26,9 @@
                 <constraint firstAttribute="bottom" secondItem="CcR-mh-WqT" secondAttribute="bottom" id="pOv-rN-mBQ"/>
             </constraints>
             <size key="customSize" width="220" height="183"/>
+            <connections>
+                <outlet property="imageView" destination="CcR-mh-WqT" id="JDi-Kd-8HE"/>
+            </connections>
             <point key="canvasLocation" x="266" y="399.5"/>
         </collectionViewCell>
     </objects>
