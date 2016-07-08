@@ -12,9 +12,6 @@
 
 - (void) dismissController;
 
-- (id<UIViewControllerInteractiveTransitioning>)interactiveTransitionForPresent;
-
-
 @end
 
 @interface TwoPresentViewController : UIViewController

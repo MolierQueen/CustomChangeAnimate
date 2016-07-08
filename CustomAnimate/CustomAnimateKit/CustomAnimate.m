@@ -18,6 +18,7 @@
 @interface CustomAnimate()
 {
     enum CustomAnimateType _type;
+
 }
 
 @end
@@ -125,7 +126,6 @@
                          shotView.transform = CGAffineTransformIdentity;
                          
                          
-                         
                      } completion:^(BOOL finished) {
                          
                          if ([transitionContext transitionWasCancelled]) {
@@ -194,12 +194,13 @@
     [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0.0 usingSpringWithDamping:0.55 initialSpringVelocity:1 / 0.55 options:0 animations:^{
         tempView.frame = [cell.imageView convertRect:cell.imageView.bounds toView:containerView];
         fromVC.view.alpha = 0;
+        [fromVC.imageViewC setHidden:YES];
     } completion:^(BOOL finished) {
         //由于加入了手势必须判断
         [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
         if ([transitionContext transitionWasCancelled]) {//手势取消了，原来隐藏的imageView要显示出来
-            //失败了隐藏tempView，显示fromVC.imageView
-            tempView.hidden = YES;
+            //失败后显示fromVC.imageView
+            tempView.hidden = NO;
             fromVC.imageView.hidden = NO;
         }else{//手势成功，cell的imageView也要显示出来
             //成功了移除tempView，下一次pop的时候又要创建，然后显示cell的imageView

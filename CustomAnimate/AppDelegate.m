@@ -24,13 +24,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     UINavigationController * oneNC_PUSH = [[UINavigationController alloc] initWithRootViewController:[[OnePushViewController alloc] init]];
-    oneNC_PUSH.tabBarItem.title = @"PUSH控制器";
+    oneNC_PUSH.tabBarItem.title = @"模拟翻页动画PUSH";
     
     OnePresentViewController * onenc_PRESENT = [[OnePresentViewController alloc] init];
-    onenc_PRESENT.tabBarItem.title = @"PRESENT控制器";
+    onenc_PRESENT.tabBarItem.title = @"底部弹出动画present";
     
     UINavigationController * collectionNC_PUSH = [[UINavigationController alloc] initWithRootViewController:[[CollectionViewController alloc] init]];
-    [collectionNC_PUSH.tabBarItem setTitle:@"系统相册动画"];
+    [collectionNC_PUSH.tabBarItem setTitle:@"系统相册动画PUSH"];
 
     UITabBarController * tabTC = [[UITabBarController alloc] init];
     [tabTC setViewControllers:@[oneNC_PUSH, onenc_PRESENT, collectionNC_PUSH]];

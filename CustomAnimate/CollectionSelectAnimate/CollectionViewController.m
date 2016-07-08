@@ -11,37 +11,13 @@
 #import "CustomCollectionCell.h"
 
 #import "CustomAnimate.h"
+#import "SwipeInteractiveTransition.h"
+
 
 
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 
 #define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
-
-
-
-/*
- A => 18    B => 20   C => 25
- 竞日孤鸣：    B5    	   20
- 老豆芽：	     A2      	   18
- 鱼头：          B2         20
- 俊成：	         A6         18
- 何子杰：	     B3         20  => 已支付
- 侯剑堃：	     B6         20
- 高阳：          B2         20
- 陈柏佳：      A4         18
- 嘉姐：         B4          20
- EMMA:        C1          25
- 宁浩：	        A7         18
-
- 杨振楠        A3 * 2    36 => 已支付
- 钱小静        A2          18 => 已支付
- 
- 合计  B5=>1   A2=>2  B2=>2  A6=>1  B3=>1  B6=> 1  A4=>1  B4=>1  C1=>1  A7=>1  A3=>2  271元
- */
- 
-
-
-
 
 
 static NSString * cellId = @"UICollectionViewCell";
@@ -50,6 +26,9 @@ static NSString * cellId = @"UICollectionViewCell";
 
 
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *collectionLayout;
+
+@property (nonatomic, strong)SwipeInteractiveTransition * swipeInteractive;
+
 
 @end
 
@@ -64,6 +43,7 @@ static NSString * cellId = @"UICollectionViewCell";
     [self.mainCollection registerNib:[UINib nibWithNibName:@"CustomCollectionCell" bundle:nil] forCellWithReuseIdentifier:cellId];
     
     self.collectionLayout.itemSize = CGSizeMake((SCREENWIDTH - 80) / 3, (SCREENWIDTH - 80) / 3);
+    
     
     
 }
@@ -87,6 +67,8 @@ static NSString * cellId = @"UICollectionViewCell";
     
     CollectionInfoConttroller * collectionInfoVC = [[CollectionInfoConttroller alloc] init];
     
+    self.swipeInteractive = [collectionInfoVC returnSwipeInteractiveTransition];
+    
     self.navigationController.delegate = self;
     
     [collectionInfoVC setHidesBottomBarWhenPushed:YES];
@@ -95,12 +77,12 @@ static NSString * cellId = @"UICollectionViewCell";
     
 }
 
-//- (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
-//                                   interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController {
-//    
-//    
-//    
-//}
+- (nullable id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                                   interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController {
+    
+    return  self.swipeInteractive.interacting ? self.swipeInteractive : nil;
+
+}
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
                                             animationControllerForOperation:(UINavigationControllerOperation)operation

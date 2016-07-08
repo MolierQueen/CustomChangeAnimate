@@ -119,7 +119,7 @@
 			children = (
 				643601E11D2E3B8000E7C251 /* CollectionSelectAnimate */,
 				643601D71D2CFF4500E7C251 /* CustomAnimateKit */,
-				643601BD1D2CF48200E7C251 /* PushAndPop */,
+				643601BD1D2CF48200E7C251 /* PageAnimateWithPush */,
 				643601BC1D2CF48200E7C251 /* PresentAndDismiss */,
 				6436019A1D2CF39D00E7C251 /* AppDelegate.h */,
 				6436019B1D2CF39D00E7C251 /* AppDelegate.m */,
@@ -162,7 +162,7 @@
 			path = PresentAndDismiss;
 			sourceTree = "<group>";
 		};
-		643601BD1D2CF48200E7C251 /* PushAndPop */ = {
+		643601BD1D2CF48200E7C251 /* PageAnimateWithPush */ = {
 			isa = PBXGroup;
 			children = (
 				643601C31D2CF4B700E7C251 /* OnePushViewController.h */,
@@ -172,6 +172,7 @@
 				643601D31D2CF58000E7C251 /* TwoPushViewController.m */,
 				643601D41D2CF58000E7C251 /* TwoPushViewController.xib */,
 			);
+			name = PageAnimateWithPush;
 			path = PushAndPop;
 			sourceTree = "<group>";
 		};

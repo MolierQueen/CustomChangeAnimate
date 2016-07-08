@@ -15,6 +15,9 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test1" translatesAutoresizingMaskIntoConstraints="NO" id="w2F-69-CSs">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oS1-4a-wqj">
                     <rect key="frame" x="250" y="250" width="100" height="100"/>
                     <constraints>
@@ -30,8 +33,15 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="oS1-4a-wqj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="6Lo-y4-KTl"/>
+                <constraint firstItem="w2F-69-CSs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7G4-iY-1kX"/>
                 <constraint firstItem="oS1-4a-wqj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9AG-rb-fnD"/>
+                <constraint firstItem="w2F-69-CSs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HHP-Mc-gSb"/>
+                <constraint firstAttribute="bottom" secondItem="w2F-69-CSs" secondAttribute="bottom" id="QT6-kC-Jc9"/>
+                <constraint firstAttribute="trailing" secondItem="w2F-69-CSs" secondAttribute="trailing" id="Zh8-HD-ZQV"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="test1" width="1080" height="1920"/>
+    </resources>
 </document>

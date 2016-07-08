@@ -7,6 +7,8 @@
 //
 
 #import "CollectionInfoConttroller.h"
+#import "SwipeInteractiveTransition.h"
+
 
 #define SCREENWIDTH [UIScreen mainScreen].bounds.size.width
 
@@ -14,9 +16,21 @@
 
 @interface CollectionInfoConttroller ()
 
+@property (nonatomic, strong)SwipeInteractiveTransition * swipeInteractive;
+
 @end
 
-@implementation CollectionInfoConttroller
+@implementation CollectionInfoConttroller\
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.swipeInteractive = [SwipeInteractiveTransition createswipeGestureWithSwipeInteractiveTransitionType:SwipeInteractiveTransitionTypePop andSwipeInteractiveTransitionGestureDirection:SwipeInteractiveTransitionGestureDirectionRight];
+        [self.swipeInteractive addPanGestureForViewController:self];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,6 +53,13 @@
     [self.view addSubview:label];
     
 }
+
+- (nullable id <UIViewControllerInteractiveTransitioning>) returnSwipeInteractiveTransition {
+    
+    return self.swipeInteractive;
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

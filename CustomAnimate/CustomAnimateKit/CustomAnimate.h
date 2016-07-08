@@ -21,9 +21,10 @@ typedef NS_ENUM(NSUInteger, CustomAnimateType) {
     
 };
 
+
 @interface CustomAnimate : NSObject<UIViewControllerAnimatedTransitioning>
 
-+(instancetype) createCustomAnimateWithType:(CustomAnimateType)type;
++ (instancetype)createCustomAnimateWithType:(CustomAnimateType)type;
 
 - (instancetype)initWithCustomAnimateTyp:(CustomAnimateType)type;
 

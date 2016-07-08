@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface CollectionInfoConttroller : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @property (nonatomic, strong) UIImageView * imageViewC;
+
+- (nullable id <UIViewControllerInteractiveTransitioning>) returnSwipeInteractiveTransition;
+
 
 @end
